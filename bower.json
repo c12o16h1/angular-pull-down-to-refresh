@@ -1,0 +1,23 @@
+{
+  "name": "angular-pull-down-to-refresh",
+  "main": "angular-pull-down-to-refresh.js",
+  "homepage": "https://github.com/c12o16h1/angular-pull-down-to-refresh",
+  "authors": [
+    "Yurii Kovalenko <ua.preston@gmail.com>"
+  ],
+  "description": "Angular directive for pulldown-refresh on mobile",
+  "moduleType": [],
+  "keywords": [
+    "angular",
+    "pull",
+    "down",
+    "refresh",
+    "mobile"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "~1.4.0",
+    "angular-mocks": "~1.4.0"
+  }
+}
