@@ -59,8 +59,11 @@
                             }
                         });
                         iElement.bind('touchend', function (e) {
-                            if (!shouldReload)
+                            if (!shouldReload){
+                                targetEl.style.webkitTransitionDuration = 0;
+                                targetEl.style.margin = '-40px auto 0';
                                 return;
+                            }
                             setStatus('loading');
                             var start = +new Date();
                             $q.when(scope.$eval(iAttrs.pullDownToRefresh)).then(function () {
@@ -75,6 +78,7 @@
                         scope.$on('$destroy', function () {
                             iElement.unbind('touchmove');
                             iElement.unbind('touchend');
+                            iElement.unbind('touchstart');
                         });
                     };
                 }
